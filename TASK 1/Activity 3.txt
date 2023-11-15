@@ -1,0 +1,27 @@
+Activity 3
+
+3.1
+fun main() {
+  var number : Int? = 10
+    println(number)
+    
+    number = null
+    println(number)
+
+}
+output: 10
+	null
+
+3.2 
+fun main() {
+    var favoriteActor: String? = "Sandra Oh"
+
+    val lengthOfName = favoriteActor?.length ?: 0
+
+    println("The number of characters in your favorite actor's name is $lengthOfName.")
+
+}
+output: The number of characters in your favorite actor's name is 9.
+
+
+
