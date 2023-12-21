@@ -1,0 +1,45 @@
+Activity 5
+
+5.1
+fun main() {
+    val trickFunction = trick
+    trick()
+    trickFunction()
+}
+
+val trick = {
+    println("No treats!")
+}
+
+output: 
+No treats!
+No treats!
+
+5.2
+fun main() {
+     val treatFunction = trickOrTreat(false)
+     val trickFunction = trickOrTreat(true)
+     treatFunction()
+     trickFunction()
+ }
+
+fun trickOrTreat(isTrick: Boolean): () -> Unit {
+        if (isTrick) {
+        return trick
+    } else {
+        return treat
+    }
+}
+
+val trick = {
+    println("No treats!")
+}
+
+val treat = {
+    println("Have a treat!")
+}
+
+output: 
+Have a treat!
+No treats!
+
