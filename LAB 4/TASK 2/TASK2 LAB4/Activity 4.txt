@@ -1,0 +1,380 @@
+5.1
+
+class Cookie(
+    val name: String,
+    val softBaked: Boolean,
+    val hasFilling: Boolean,
+    val price: Double
+)
+val cookies = listOf(
+    Cookie(
+        name = "Chocolate Chip",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.69
+    ),
+    Cookie(
+        name = "Banana Walnut", 
+        softBaked = true, 
+        hasFilling = false, 
+        price = 1.49
+    ),
+    Cookie(
+        name = "Vanilla Creme",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.59
+    ),
+    Cookie(
+        name = "Chocolate Peanut Butter",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.49
+    ),
+    Cookie(
+        name = "Snickerdoodle",
+        softBaked = true,
+        hasFilling = false,
+        price = 1.39
+    ),
+    Cookie(
+        name = "Blueberry Tart",
+        softBaked = true,
+        hasFilling = true,
+        price = 1.79
+    ),
+    Cookie(
+        name = "Sugar and Sprinkles",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.39
+    )
+)
+fun main() {
+	cookies.forEach{
+        println("Menu item: $it")
+    }
+}
+
+output: Menu item: Cookie@4769b07b
+Menu item: Cookie@6f539caf
+Menu item: Cookie@79fc0f2f
+Menu item: Cookie@50040f0c
+Menu item: Cookie@2dda6444
+Menu item: Cookie@5e9f23b4
+Menu item: Cookie@4783da3f
+
+5.2 
+class Cookie(
+    val name: String,
+    val softBaked: Boolean,
+    val hasFilling: Boolean,
+    val price: Double
+)
+val cookies = listOf(
+    Cookie(
+        name = "Chocolate Chip",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.69
+    ),
+    Cookie(
+        name = "Banana Walnut", 
+        softBaked = true, 
+        hasFilling = false, 
+        price = 1.49
+    ),
+    Cookie(
+        name = "Vanilla Creme",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.59
+    ),
+    Cookie(
+        name = "Chocolate Peanut Butter",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.49
+    ),
+    Cookie(
+        name = "Snickerdoodle",
+        softBaked = true,
+        hasFilling = false,
+        price = 1.39
+    ),
+    Cookie(
+        name = "Blueberry Tart",
+        softBaked = true,
+        hasFilling = true,
+        price = 1.79
+    ),
+    Cookie(
+        name = "Sugar and Sprinkles",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.39
+    )
+)
+fun main() {
+	cookies.forEach{
+        println("Menu item: ${it.name}")
+    }
+}
+
+output: 
+Menu item: Chocolate Chip
+Menu item: Banana Walnut
+Menu item: Vanilla Creme
+Menu item: Chocolate Peanut Butter
+Menu item: Snickerdoodle
+Menu item: Blueberry Tart
+Menu item: Sugar and Sprinkles
+
+5.3 
+class Cookie(
+    val name: String,
+    val softBaked: Boolean,
+    val hasFilling: Boolean,
+    val price: Double
+)
+val cookies = listOf(
+    Cookie(
+        name = "Chocolate Chip",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.69
+    ),
+    Cookie(
+        name = "Banana Walnut", 
+        softBaked = true, 
+        hasFilling = false, 
+        price = 1.49
+    ),
+    Cookie(
+        name = "Vanilla Creme",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.59
+    ),
+    Cookie(
+        name = "Chocolate Peanut Butter",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.49
+    ),
+    Cookie(
+        name = "Snickerdoodle",
+        softBaked = true,
+        hasFilling = false,
+        price = 1.39
+    ),
+    Cookie(
+        name = "Blueberry Tart",
+        softBaked = true,
+        hasFilling = true,
+        price = 1.79
+    ),
+    Cookie(
+        name = "Sugar and Sprinkles",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.39
+    )
+)
+fun main() {
+	val fullMenu = cookies.map {
+    "${it.name} - $${it.price}"
+}
+    println("Full menu: ")
+    fullMenu.forEach {
+        println(it)
+    }
+}
+
+output: 
+Full menu: 
+Chocolate Chip - $1.69
+Banana Walnut - $1.49
+Vanilla Creme - $1.59
+Chocolate Peanut Butter - $1.49
+Snickerdoodle - $1.39
+Blueberry Tart - $1.79
+Sugar and Sprinkles - $1.39
+
+5.4 
+
+class Cookie(
+    val name: String,
+    val softBaked: Boolean,
+    val hasFilling: Boolean,
+    val price: Double
+)
+val cookies = listOf(
+    Cookie(
+        name = "Chocolate Chip",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.69
+    ),
+    Cookie(
+        name = "Banana Walnut", 
+        softBaked = true, 
+        hasFilling = false, 
+        price = 1.49
+    ),
+    Cookie(
+        name = "Vanilla Creme",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.59
+    ),
+    Cookie(
+        name = "Chocolate Peanut Butter",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.49
+    ),
+    Cookie(
+        name = "Snickerdoodle",
+        softBaked = true,
+        hasFilling = false,
+        price = 1.39
+    ),
+    Cookie(
+        name = "Blueberry Tart",
+        softBaked = true,
+        hasFilling = true,
+        price = 1.79
+    ),
+    Cookie(
+        name = "Sugar and Sprinkles",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.39
+    )
+)
+fun main() {
+val softBakedMenu = cookies.filter {
+    it.softBaked
+}
+println("Soft cookies:")
+softBakedMenu.forEach {
+    println("${it.name} - $${it.price}")
+}
+}
+
+output: 
+Soft cookies:
+Banana Walnut - $1.49
+Snickerdoodle - $1.39
+Blueberry Tart - $1.79
+
+5.5 
+
+class Cookie(
+    val name: String,
+    val softBaked: Boolean,
+    val hasFilling: Boolean,
+    val price: Double
+)
+val cookies = listOf(
+    Cookie(
+        name = "Chocolate Chip",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.69
+    ),
+    Cookie(
+        name = "Banana Walnut", 
+        softBaked = true, 
+        hasFilling = false, 
+        price = 1.49
+    ),
+    Cookie(
+        name = "Vanilla Creme",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.59
+    ),
+    Cookie(
+        name = "Chocolate Peanut Butter",
+        softBaked = false,
+        hasFilling = true,
+        price = 1.49
+    ),
+    Cookie(
+        name = "Snickerdoodle",
+        softBaked = true,
+        hasFilling = false,
+        price = 1.39
+    ),
+    Cookie(
+        name = "Blueberry Tart",
+        softBaked = true,
+        hasFilling = true,
+        price = 1.79
+    ),
+    Cookie(
+        name = "Sugar and Sprinkles",
+        softBaked = false,
+        hasFilling = false,
+        price = 1.39
+    )
+)
+fun main() {
+val groupedMenu = cookies.groupBy {it.softBaked}
+val softBakedMenu = groupedMenu[true] ?: listOf()
+val crunchyMenu = groupedMenu[false] ?: listOf()
+println("Soft cookies:")
+softBakedMenu.forEach {
+    println("${it.name} - $${it.price}")
+}
+println("Crunchy cookies:")
+crunchyMenu.forEach {
+    println("${it.name} - $${it.price}")
+}
+}
+
+output: 
+Soft cookies:
+Banana Walnut - $1.49
+Snickerdoodle - $1.39
+Blueberry Tart - $1.79
+Crunchy cookies:
+Chocolate Chip - $1.69
+Vanilla Creme - $1.59
+Chocolate Peanut Butter - $1.49
+Sugar and Sprinkles - $1.39
+
+5.6
+
+fun main() {
+val totalPrice = cookies.fold(0.0) {total, cookie ->
+    total + cookie.price
+}
+println("Total price: $${totalPrice}")
+}
+
+output: Total price: $10.83
+
+5.7 
+fun main() {
+val alphabeticalMenu = cookies.sortedBy {
+    it.name
+}
+println("Alphabetical menu:")
+alphabeticalMenu.forEach {
+    println(it.name)
+}
+}
+output: 
+Alphabetical menu:
+Banana Walnut
+Blueberry Tart
+Chocolate Chip
+Chocolate Peanut Butter
+Snickerdoodle
+Sugar and Sprinkles
+Vanilla Creme
+
+
