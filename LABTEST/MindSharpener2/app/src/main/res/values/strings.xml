@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="levels_array">
+        <item>I3</item>
+        <item>I5</item>
+        <item>I7</item>
+    </string-array>
+    <string name="app_name">MindSharpener</string>
+</resources>
