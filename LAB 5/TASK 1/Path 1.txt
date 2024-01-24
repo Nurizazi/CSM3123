@@ -1,0 +1,151 @@
+Path 1:
+
+1.1
+fun main() {
+    println("Happy Birthday!")
+    println("Jhansi")
+    println("You are 25!")
+}
+
+output: 
+Happy Birthday!
+Jhansi
+You are 25!
+
+1.2
+fun main() {
+    println("Happy Birthday, Rover!")
+    
+    // Let's print a cake!
+    println("   ,,,,,   ")
+    println("   |||||   ")
+    println(" =========")
+    println("@@@@@@@@@@@")
+    println("{~@~@~@~@~}")
+    println("@@@@@@@@@@@")
+    
+    // This prints an empty line.
+    println("")
+
+    println("You are already 5!")
+    println("5 is the very best age to celebrate!")
+}
+
+output: 
+Happy Birthday, Rover!
+   ,,,,,   
+   |||||   
+ =========
+@@@@@@@@@@@
+{~@~@~@~@~}
+@@@@@@@@@@@
+
+You are already 5!
+5 is the very best age to celebrate!
+
+1.3 
+fun main() {
+    
+    val age = 5 * 365
+    val name = "Rover"
+    
+    println("Happy Birthday, ${name}!")
+    
+    // Let's print a cake!
+    println("   ,,,,,   ")
+    println("   |||||   ")
+    println(" =========")
+    println("@@@@@@@@@@@")
+    println("{~@~@~@~@~}")
+    println("@@@@@@@@@@@")
+    
+    // This prints an empty line.
+    println("")
+
+    println("You are already ${age} days old, ${name}!")
+    println("${age} days old is the very best age to celebrate!")
+}
+
+output: 
+Happy Birthday, Rover!
+   ,,,,,   
+   |||||   
+ =========
+@@@@@@@@@@@
+{~@~@~@~@~}
+@@@@@@@@@@@
+
+You are already 1825 days old, Rover!
+1825 days old is the very best age to celebrate!
+
+1.4
+fun main() {
+    val border = "`-._,-'"
+    val timesToRepeat = 4
+    printBorder(border, timesToRepeat)
+    println("  Happy Birthday, Jhansi!")
+    printBorder(border, timesToRepeat)
+}
+
+fun printBorder(border: String, timesToRepeat: Int) {
+    repeat(timesToRepeat) {
+        print(border)
+    }
+    println()
+}
+
+output: 
+`-._,-'`-._,-'`-._,-'`-._,-'
+  Happy Birthday, Jhansi!
+`-._,-'`-._,-'`-._,-'`-._,-'
+
+1.5
+fun main() {
+    val age = 24
+    val layers = 5
+    printCakeCandles(age)
+    printCakeTop(age)
+    printCakeBottom(age, layers)
+}
+
+fun printCakeCandles(age: Int) {
+    print (" ")
+    repeat(age) {
+          print(",")
+    }    
+    println() // Print an empty line
+
+    print(" ") // Print the inset of the candles on the cake
+    repeat(age) {
+        print("|")
+    }    
+    println()
+}
+
+fun printCakeTop(age: Int) {
+    repeat(age + 2) {
+        print("=")
+    }
+    println()
+}
+
+fun printCakeBottom(age: Int, layers: Int) {
+    repeat(layers) {
+        repeat(age + 2) {
+            print("@")
+        }
+        println()
+    }    
+}
+
+output: 
+ ,,,,,,,,,,,,,,,,,,,,,,,,
+ ||||||||||||||||||||||||
+==========================
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
